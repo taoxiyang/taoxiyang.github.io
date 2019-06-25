@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://xiyang.com/2019/06/25/flink-1-get-start/4.png">
 <meta property="og:image" content="http://xiyang.com/2019/06/25/flink-1-get-start/5.png">
 <meta property="og:image" content="http://xiyang.com/2019/06/25/flink-1-get-start/6.png">
-<meta property="og:updated_time" content="2019-06-25T08:59:10.000Z">
+<meta property="og:updated_time" content="2019-06-25T09:07:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flink系列（一）初识Flink">
 <meta name="twitter:description" content="Flink是什么Flink是一个开源的分布式的流处理和批处理的平台。Flink的核心是一个数据流的处理引擎，为数据流处理提供了分布式的数据分发，通信和容错机制。批处理是建立在流处理之上的，Flink将批处理视为一种特殊的流处理。流处理是无限的数据流，批处理是有限的数据流 Flink的概念模型 API的抽象级别   最低级的抽象是有状态的流处理API，这一级的API允许用户从一个或多个流中处理事件(">
@@ -416,6 +416,7 @@
 <li><p>保存点<br>用Data Stream API编写的程序可以从保存点恢复执行。保存点允许更新程序和Flink群集，而不会丢失任何状态。<br>保存点是手动触发的检查点，它会获取程序的SNAPSHOT并将其写入状态后台。他们依靠常规的检查点机制。在执行期间，程序会定期在工作节点上创建SNAPSHOT并生成检查点。对于恢复，仅需要最后完成的检查点，并且一旦新的检查点完成，就可以安全地丢弃旧的检查点。<br>保存点与这些定期检查点类似，不同之处在于它们由用户触发，并且在较新的检查点完成时不会自动过期。可以从命令行或通过REST API取消作业时创建保存点。</p>
 </li>
 </ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这篇博客的内容基本是上从Flink的官网翻译过来的，然而Flink的中文官网翻译的不是很好，于是我又翻看了很多其他人的博客，加入了一点自己的理解，整理成了这篇博客。现在了解了Flink的基本概念，算是对Flink有了一个大体上的认识。</p>
 
       
     </div>
@@ -592,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Flink是什么"><span class="nav-number">1.</span> <span class="nav-text">Flink是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flink的概念模型"><span class="nav-number">2.</span> <span class="nav-text">Flink的概念模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式运行时环境"><span class="nav-number">3.</span> <span class="nav-text">分布式运行时环境</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Flink是什么"><span class="nav-number">1.</span> <span class="nav-text">Flink是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flink的概念模型"><span class="nav-number">2.</span> <span class="nav-text">Flink的概念模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式运行时环境"><span class="nav-number">3.</span> <span class="nav-text">分布式运行时环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
