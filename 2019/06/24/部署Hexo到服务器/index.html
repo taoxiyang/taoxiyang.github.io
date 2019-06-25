@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://xiyang.com/2019/06/24/部署Hexo到服务器/Custom_domain.jpeg">
 <meta property="og:image" content="http://xiyang.com/2019/06/24/部署Hexo到服务器/hello.jpeg">
 <meta property="og:image" content="http://xiyang.com/2019/06/24/部署Hexo到服务器/last.jpeg">
-<meta property="og:updated_time" content="2019-06-25T02:51:45.000Z">
+<meta property="og:updated_time" content="2019-06-25T02:58:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署Hexo到服务器">
 <meta name="twitter:description" content="创建自己的Github Page创建一个新的repository，命名为username.github.io，username是你在GitHub上的username..这里我的username是taoxiyang，创建taoxiyang.github.io的repository  clone刚创建的repository 1git clone https://github.com/username/">
@@ -391,7 +391,7 @@
 </li>
 </ol>
 <p>完成</p>
-<h3 id="每次部署到git，Custom-domain都会被重置为空"><a href="#每次部署到git，Custom-domain都会被重置为空" class="headerlink" title="每次部署到git，Custom domain都会被重置为空"></a>每次部署到git，Custom domain都会被重置为空</h3><p>解决这个问题，需要在博客目录的source/目录下新建一个CNAME文件，将自己的Custom domain写进文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;taoxiyang.me&apos; &gt; CNAME</span><br></pre></td></tr></table></figure></p>
+<h3 id="Custom-domain重置问题"><a href="#Custom-domain重置问题" class="headerlink" title="Custom domain重置问题"></a>Custom domain重置问题</h3><p>每次部署到git，会发现GitHub Pages的Custom domain选项会被重置，解决这个问题，需要在博客目录的source/目录下新建一个CNAME文件，将自己的Custom domain写进文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;taoxiyang.me&apos; &gt; CNAME</span><br></pre></td></tr></table></figure></p>
 <p>这样，每次部署到git，就不会把Custom domain重置了</p>
 
       
@@ -575,7 +575,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建自己的Github-Page"><span class="nav-number">1.</span> <span class="nav-text">创建自己的Github Page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义自己的域名"><span class="nav-number">2.</span> <span class="nav-text">自定义自己的域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Hexo到github"><span class="nav-number">3.</span> <span class="nav-text">部署Hexo到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每次部署到git，Custom-domain都会被重置为空"><span class="nav-number">4.</span> <span class="nav-text">每次部署到git，Custom domain都会被重置为空</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建自己的Github-Page"><span class="nav-number">1.</span> <span class="nav-text">创建自己的Github Page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义自己的域名"><span class="nav-number">2.</span> <span class="nav-text">自定义自己的域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Hexo到github"><span class="nav-number">3.</span> <span class="nav-text">部署Hexo到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-domain重置问题"><span class="nav-number">4.</span> <span class="nav-text">Custom domain重置问题</span></a></li></ol></div>
             
 
           </div>
