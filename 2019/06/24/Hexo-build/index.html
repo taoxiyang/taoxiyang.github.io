@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta name="description" content="安装前提 Node.js git  先安装好node和git，安装的过程比较简单 安装好之后，使用npm安装Hexo就可以了 1npm install hexo-cli -g 解决npm全局安装的权限问题注意，这里非常容易报一些权限问题，解决的办法可以参考npm官方的解决方案  在用户的home目录，创建一个文件夹，用于npm全局的安装  1$ mkdir ~/.npm-global  配置npm">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo建站之路">
-<meta property="og:url" content="http://xiyang.com/2019/03/01/my-first-blog/index.html">
+<meta property="og:title" content="Hexo搭建过程">
+<meta property="og:url" content="http://xiyang.com/2019/06/24/Hexo-build/index.html">
 <meta property="og:site_name" content="Xiyang&#39;s blog">
-<meta property="og:description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta property="og:description" content="安装前提 Node.js git  先安装好node和git，安装的过程比较简单 安装好之后，使用npm安装Hexo就可以了 1npm install hexo-cli -g 解决npm全局安装的权限问题注意，这里非常容易报一些权限问题，解决的办法可以参考npm官方的解决方案  在用户的home目录，创建一个文件夹，用于npm全局的安装  1$ mkdir ~/.npm-global  配置npm">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-25T02:32:16.000Z">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/Hexo-build/blog_init.jpeg">
+<meta property="og:updated_time" content="2019-06-25T02:32:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo建站之路">
-<meta name="twitter:description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta name="twitter:title" content="Hexo搭建过程">
+<meta name="twitter:description" content="安装前提 Node.js git  先安装好node和git，安装的过程比较简单 安装好之后，使用npm安装Hexo就可以了 1npm install hexo-cli -g 解决npm全局安装的权限问题注意，这里非常容易报一些权限问题，解决的办法可以参考npm官方的解决方案  在用户的home目录，创建一个文件夹，用于npm全局的安装  1$ mkdir ~/.npm-global  配置npm">
+<meta name="twitter:image" content="http://xiyang.com/2019/06/24/Hexo-build/blog_init.jpeg">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://xiyang.com/2019/03/01/my-first-blog/">
+  <link rel="canonical" href="http://xiyang.com/2019/06/24/Hexo-build/">
 
 
 
 
 
-  <title>Hexo建站之路 | Xiyang's blog</title>
+  <title>Hexo搭建过程 | Xiyang's blog</title>
   
 
 
@@ -263,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiyang.com/2019/03/01/my-first-blog/">
+    <link itemprop="mainEntityOfPage" href="http://xiyang.com/2019/06/24/Hexo-build/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TaoXiyang">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo建站之路</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo搭建过程</h1>
         
 
         <div class="post-meta">
@@ -292,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-01T11:51:38+08:00">
-                2019-03-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T16:37:07+08:00">
+                2019-06-24
               </time>
             
 
@@ -352,16 +354,38 @@
       
 
       
-        <h2 id="为什么会有这个博客"><a href="#为什么会有这个博客" class="headerlink" title="为什么会有这个博客"></a>为什么会有这个博客</h2><p>一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。</p>
-<h2 id="如何从零搭建自己的hexo博客"><a href="#如何从零搭建自己的hexo博客" class="headerlink" title="如何从零搭建自己的hexo博客"></a>如何从零搭建自己的hexo博客</h2><p>这个过程还是有点技术含量的，花了我不少时间，之后会把过程详细记录下来，大概分为以下几个步骤</p>
+        <h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><ul>
+<li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
+</ul>
+<p>先安装好node和git，安装的过程比较简单</p>
+<p>安装好之后，使用npm安装Hexo就可以了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="解决npm全局安装的权限问题"><a href="#解决npm全局安装的权限问题" class="headerlink" title="解决npm全局安装的权限问题"></a>解决npm全局安装的权限问题</h3><p>注意，这里非常容易报一些权限问题，解决的办法可以参考<a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" target="_blank" rel="noopener">npm官方的解决方案</a></p>
 <ol>
-<li>安装hexo</li>
-<li>设置hexo的主题，安装各种插件</li>
-<li>github设置自己的pages</li>
-<li>购买一个自己的域名，设置域名解析</li>
-<li>hexo写博客，部署到github</li>
+<li><p>在用户的home目录，创建一个文件夹，用于npm全局的安装</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/.npm-global</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置npm使用新的目录路径</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set prefix &apos;~/.npm-global</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置.profile</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ export PATH=~/.npm-global/bin:$PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新系统变量，使配置生效</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ source ~/.profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试一下</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g jshint</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>嗯嗯，大概就是这样</p>
+<h3 id="创建自己的博客工程"><a href="#创建自己的博客工程" class="headerlink" title="创建自己的博客工程"></a>创建自己的博客工程</h3><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
+<p>生成静态文件  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>启动服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p>该命令会在<a href="localhost:4000" target="_blank" rel="noopener">本地4000端</a>口启动一个web服务，一切正常的话就能看到如下页面了</p>
+<img src="/2019/06/24/Hexo-build/blog_init.jpeg" title="This is an example image">
+<p>到此，Hexo的博客就搭建完成了。</p>
 
       
     </div>
@@ -392,14 +416,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/01/my-first-blog/" rel="next" title="Hexo建站之路">
+                <i class="fa fa-chevron-left"></i> Hexo建站之路
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/24/Hexo-build/" rel="prev" title="Hexo搭建过程">
-                Hexo搭建过程 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/24/hexo-deploy-git/" rel="prev" title="部署Hexo到git page">
+                部署Hexo到git page <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -544,7 +572,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么会有这个博客"><span class="nav-number">1.</span> <span class="nav-text">为什么会有这个博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何从零搭建自己的hexo博客"><span class="nav-number">2.</span> <span class="nav-text">如何从零搭建自己的hexo博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装前提"><span class="nav-number">1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决npm全局安装的权限问题"><span class="nav-number">2.</span> <span class="nav-text">解决npm全局安装的权限问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建自己的博客工程"><span class="nav-number">3.</span> <span class="nav-text">创建自己的博客工程</span></a></li></ol></div>
             
 
           </div>

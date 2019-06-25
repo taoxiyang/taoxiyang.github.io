@@ -79,18 +79,24 @@
 
 
 
-<meta name="description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta name="description" content="创建自己的Github Page创建一个新的repository，命名为username.github.io，username是你在GitHub上的username..这里我的username是taoxiyang，创建taoxiyang.github.io的repository  clone刚创建的repository 1git clone https://github.com/username/">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo建站之路">
-<meta property="og:url" content="http://xiyang.com/2019/03/01/my-first-blog/index.html">
+<meta property="og:title" content="部署Hexo到git page">
+<meta property="og:url" content="http://xiyang.com/2019/06/24/hexo-deploy-git/index.html">
 <meta property="og:site_name" content="Xiyang&#39;s blog">
-<meta property="og:description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta property="og:description" content="创建自己的Github Page创建一个新的repository，命名为username.github.io，username是你在GitHub上的username..这里我的username是taoxiyang，创建taoxiyang.github.io的repository  clone刚创建的repository 1git clone https://github.com/username/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-25T02:32:16.000Z">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/blog_create_repo.jpeg">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/DNS_1.jpeg">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/Custom_domain.jpeg">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/hello.jpeg">
+<meta property="og:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/last.jpeg">
+<meta property="og:updated_time" content="2019-06-25T09:09:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo建站之路">
-<meta name="twitter:description" content="为什么会有这个博客一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。 如何从零搭建自己的hex">
+<meta name="twitter:title" content="部署Hexo到git page">
+<meta name="twitter:description" content="创建自己的Github Page创建一个新的repository，命名为username.github.io，username是你在GitHub上的username..这里我的username是taoxiyang，创建taoxiyang.github.io的repository  clone刚创建的repository 1git clone https://github.com/username/">
+<meta name="twitter:image" content="http://xiyang.com/2019/06/24/hexo-deploy-git/blog_create_repo.jpeg">
 
 
 
@@ -120,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://xiyang.com/2019/03/01/my-first-blog/">
+  <link rel="canonical" href="http://xiyang.com/2019/06/24/hexo-deploy-git/">
 
 
 
 
 
-  <title>Hexo建站之路 | Xiyang's blog</title>
+  <title>部署Hexo到git page | Xiyang's blog</title>
   
 
 
@@ -263,7 +269,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiyang.com/2019/03/01/my-first-blog/">
+    <link itemprop="mainEntityOfPage" href="http://xiyang.com/2019/06/24/hexo-deploy-git/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TaoXiyang">
@@ -280,7 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo建站之路</h1>
+          <h1 class="post-title" itemprop="name headline">部署Hexo到git page</h1>
         
 
         <div class="post-meta">
@@ -292,8 +298,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-01T11:51:38+08:00">
-                2019-03-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T21:54:01+08:00">
+                2019-06-24
               </time>
             
 
@@ -352,16 +358,41 @@
       
 
       
-        <h2 id="为什么会有这个博客"><a href="#为什么会有这个博客" class="headerlink" title="为什么会有这个博客"></a>为什么会有这个博客</h2><p>一直很想要有自己的个人博客地址，之前用wordpress搞了一个，不是很让我满意。wordpress很多功能是收费的，不容易定制化，比如想统计网站访问人数，阅读量等功能，个人介绍，博客分类等功能就不那么容易实现，个人博客界面的可定制化也比较差。也许是我不太会用的缘故，折腾了几个月，终于还是转向hexo阵营了。不得不说hexo用于搭建个人博客真的是太棒了。</p>
-<h2 id="如何从零搭建自己的hexo博客"><a href="#如何从零搭建自己的hexo博客" class="headerlink" title="如何从零搭建自己的hexo博客"></a>如何从零搭建自己的hexo博客</h2><p>这个过程还是有点技术含量的，花了我不少时间，之后会把过程详细记录下来，大概分为以下几个步骤</p>
+        <h3 id="创建自己的Github-Page"><a href="#创建自己的Github-Page" class="headerlink" title="创建自己的Github Page"></a>创建自己的Github Page</h3><p>创建一个新的repository，命名为username.github.io，username是你在GitHub上的username..<br>这里我的username是taoxiyang，创建taoxiyang.github.io的repository</p>
+<img src="/2019/06/24/hexo-deploy-git/blog_create_repo.jpeg" title="This is an example image">
+<p>clone刚创建的repository</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/username/username.github.io</span><br></pre></td></tr></table></figure>
+<p>新增一个index.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd taoxiyang.github.io/</span><br><span class="line">echo &quot;Hello World&quot; &gt; index.html</span><br></pre></td></tr></table></figure>
+<p>提交文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --all</span><br><span class="line">git commit -m &quot;Init&quot;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>这样应该可以通过域名taoxiyang.github.io访问自己的github page了</p>
+<h3 id="自定义自己的域名"><a href="#自定义自己的域名" class="headerlink" title="自定义自己的域名"></a>自定义自己的域名</h3><p>觉得自己的域名不够酷？想要自定义自己的域名？可以试试自定义域名</p>
 <ol>
-<li>安装hexo</li>
-<li>设置hexo的主题，安装各种插件</li>
-<li>github设置自己的pages</li>
-<li>购买一个自己的域名，设置域名解析</li>
-<li>hexo写博客，部署到github</li>
+<li>首先需要注册一个域名，可以在GoDaddy上购买一个域名，这里我选择taoxiyang.me，购买的过程省略</li>
+<li>将自己的域名注册到一个DNS服务提供商，在这里我选择阿里云域名解析服务  <img src="/2019/06/24/hexo-deploy-git/DNS_1.jpeg" title="This is an example image"> </li>
+<li>在github page设置自己的Custom domain<img src="/2019/06/24/hexo-deploy-git/Custom_domain.jpeg" title="This is an example image"> </li>
+<li>访问taoxiyang.me<img src="/2019/06/24/hexo-deploy-git/hello.jpeg" title="This is an example image"> 
+</li>
 </ol>
-<p>嗯嗯，大概就是这样</p>
+<p>可以看到自定义的域名生效了</p>
+<h3 id="部署Hexo到github"><a href="#部署Hexo到github" class="headerlink" title="部署Hexo到github"></a>部署Hexo到github</h3><ol>
+<li><p>安装 hexo-deployer-git  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 _config.yml，在结尾加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/taoxiyang/taoxiyang.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成静态文件并部署  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问taoxiyang.me网站  </p>
+<img src="/2019/06/24/hexo-deploy-git/last.jpeg" title="This is an example image">   
+</li>
+</ol>
+<p>完成</p>
+<h3 id="Custom-domain重置问题"><a href="#Custom-domain重置问题" class="headerlink" title="Custom domain重置问题"></a>Custom domain重置问题</h3><p>每次部署到git，会发现GitHub Pages的Custom domain选项会被重置，解决这个问题，需要在博客目录的source/目录下新建一个CNAME文件，将自己的Custom domain写进文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;taoxiyang.me&apos; &gt; CNAME</span><br></pre></td></tr></table></figure></p>
+<p>这样，每次部署到git，就不会把Custom domain重置了</p>
 
       
     </div>
@@ -392,14 +423,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/06/24/Hexo-build/" rel="next" title="Hexo搭建过程">
+                <i class="fa fa-chevron-left"></i> Hexo搭建过程
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/24/Hexo-build/" rel="prev" title="Hexo搭建过程">
-                Hexo搭建过程 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/25/flink-1-get-start/" rel="prev" title="Flink系列（一）初识Flink">
+                Flink系列（一）初识Flink <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -544,7 +579,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么会有这个博客"><span class="nav-number">1.</span> <span class="nav-text">为什么会有这个博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何从零搭建自己的hexo博客"><span class="nav-number">2.</span> <span class="nav-text">如何从零搭建自己的hexo博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建自己的Github-Page"><span class="nav-number">1.</span> <span class="nav-text">创建自己的Github Page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义自己的域名"><span class="nav-number">2.</span> <span class="nav-text">自定义自己的域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Hexo到github"><span class="nav-number">3.</span> <span class="nav-text">部署Hexo到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-domain重置问题"><span class="nav-number">4.</span> <span class="nav-text">Custom domain重置问题</span></a></li></ol></div>
             
 
           </div>
