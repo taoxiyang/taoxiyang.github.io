@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://xiyang.com/2019/06/26/Hexo-comment/disqus4.png">
 <meta property="og:image" content="http://xiyang.com/2019/06/26/Hexo-comment/disqus5.png">
 <meta property="og:image" content="http://xiyang.com/2019/06/26/Hexo-comment/disqus6.png">
-<meta property="og:updated_time" content="2019-06-26T02:25:12.000Z">
+<meta property="og:updated_time" content="2019-06-26T02:38:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo添加评论功能">
 <meta name="twitter:description" content="给博客添加评论功能经过几天的努力，终于把博客搭建起来了，选了个next主题，之后应该也会写一篇如何配置Hexo主题的博客。今天先看看怎么给博客添加评论功能吧。 使用Disqus为博客添加评论功能Disqus是国外的评论系统，可以使用twitter，facebook，google账号登录。前提是需要科学上网。   Disqus网站 https://disqus.com.    配置 Disqus">
@@ -373,31 +373,30 @@
 <h3 id="使用Disqus为博客添加评论功能"><a href="#使用Disqus为博客添加评论功能" class="headerlink" title="使用Disqus为博客添加评论功能"></a>使用Disqus为博客添加评论功能</h3><p>Disqus是国外的评论系统，可以使用twitter，facebook，google账号登录。前提是需要科学上网。  </p>
 <p>Disqus网站 <a href="https://disqus.com" target="_blank" rel="noopener">https://disqus.com</a>.  </p>
 <ol>
-<li><p>配置 Disqus </p>
+<li><p>配置 Disqus  </p>
 <img src="/2019/06/26/Hexo-comment/disqus1.png" title="images">
 </li>
-<li><p>Create a new site<br>配置选择I want to install Disqus on my site.  </p>
+<li><p>Create a new site<br> 配置选择I want to install Disqus on my site.  </p>
 <img src="/2019/06/26/Hexo-comment/disqus2.png" title="images">
+<p> 依次填写website Name, ShortName, Category, Language  </p>
+<img src="/2019/06/26/Hexo-comment/disqus3.png" title="images">
 </li>
-</ol>
-<p>依次填写website Name, ShortName, Category, Language<br><img src="/2019/06/26/Hexo-comment/disqus3.png" title="images"></p>
-<ol start="3">
 <li><p>Site Install  </p>
-<img src="/2019/06/26/Hexo-comment/disqus4.png" title="images">
-<p>Hexo不属于以上任何形式，因此选择Universal Code(通用代码)。 </p>
-<img src="/2019/06/26/Hexo-comment/disqus5.png" title="images">
-<p>上图代码不用记，直接选择configure（配置）。  </p>
-<img src="/2019/06/26/Hexo-comment/disqus6.png" title="images">
-<p>Website URL 填写博客地址，如果Website Name不重复，此Website Name就是shortname。点击Complete SetUp完成配置。</p>
+<img src="/2019/06/26/Hexo-comment/disqus4.png" title="images">  
+<p> Hexo不属于以上任何形式，因此选择Universal Code(通用代码)。 </p>
+<img src="/2019/06/26/Hexo-comment/disqus5.png" title="images">  
+<p> 上图代码不用记，直接选择configure（配置）。  </p>
+<img src="/2019/06/26/Hexo-comment/disqus6.png" title="images">  
+<p> Website URL 填写博客地址，如果Website Name不重复，此Website Name就是shortname。点击Complete SetUp完成配置。</p>
 </li>
-<li><p>配置 Hexo.<br>在主题配置文件(_config.yml)文件中找到以下代码，添加你Disqus设置的Website Name在shortname处，英文冒号后空格。</p>
+<li><p>配置 Hexo.<br> 在主题配置文件(_config.yml)文件中找到以下代码，添加你Disqus设置的Website Name在shortname处，英文冒号后空格。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Disqus</span><br><span class="line">disqus:</span><br><span class="line">  enable: true</span><br><span class="line">  shortname: taoxiyang</span><br><span class="line">  count: true</span><br></pre></td></tr></table></figure>
+<p> 使用如下命令提交到coding和github</p>
 </li>
 </ol>
-<p>使用如下命令提交到coding和github</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>部署后应该可以看到自己的博客可以被评论了</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.jianshu.com/p/d68de067ea74" target="_blank" rel="noopener">为 Hexo 博客加入 Disqus 评论</a></p>
+<pre><code>部署后应该可以看到自己的博客可以被评论了
+</code></pre><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.jianshu.com/p/d68de067ea74" target="_blank" rel="noopener">为 Hexo 博客加入 Disqus 评论</a></p>
 
       
     </div>
